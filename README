@@ -1,0 +1,65 @@
+DiscSpan
+
+author:  ceedvd ( a t )  g  m a i l .com
+
+---------
+
+This tool is geared more towards smaller files such as music and photos 
+as it cannot span a single file across multiple discs.  
+
+If you have lots of files in the gigabyte  range, this utility won't be as efficient.
+
+The tool is written in Python and uses growisofs as the burning interface.
+
+
+Requirements
+------------
+
+It is known to work in Fedora 8, but should work on any recent 
+Linux system with growisofs, and python 2.5.  Requires the dbus-python module.
+
+
+running and installing DiscSpan
+----------------
+
+copy the discscan.py somewhere in your path.
+run discspan.py.
+
+You will be prompted for the directory you'd like to backup, the device
+you want to use to burn, and the speed at which you will burn.
+
+The program will then analyze the files and calculate how many DVDs are
+needed as well as make sure no files are greater than the size of a DVD
+itself.
+
+If you run discspany.py with the "test" argument, it will perform a test
+burn.
+
+
+limitations
+-----------
+
+DBUS doesn't detect the capacity of the disc properly so I can't modify
+these on the fly.  If someone can give me the capacity in bytes of a Dual Layer
+DVD or Blue Ray/HD-DVD, I can add that.
+
+I've guestimated values but if they are wrong, please tweek them and send
+me an appropriate update.
+
+Also, this has only been tested on dvd-r and dvd-rw media.
+
+
+todo
+-----
+
+Optionally provide command-line arugments.
+Advanced file sorting to optimally use the space on the DVD.
+
+
+Thank Yous
+-----------
+Thank you to Davyd Madeley and Dieter Verfaillie for their DBUS
+code examples!  Without that, I would not have figured out
+how to detect the DVD drive :).
+
+Also thanks to the #python channel on freenode.  Wonderful folks.

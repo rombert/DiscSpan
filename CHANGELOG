@@ -1,0 +1,17 @@
+DiscSpan Changelog:
+
+
+0.1.2 - 2007.12.3
+
+Now capable of detecting dvd_rw, and dvd+ variants.
+Correctly traps CTRL+C.
+updated README.
+
+0.1.1 - 2007.12.12
+
+Better detection of disc media
+
+0.1  - 2007.12.12
+
+Initial Release
+
